@@ -15,8 +15,9 @@ const Shop = () => {
     }, []);
 
 
-    function handleCart(shop) {
-        const exist = order.find(item => item.id == shop.id)
+    const handleCart = (shop) => {
+        console.log(shop.idCategory)
+        const exist = order.find(item => item.idCategory == shop.idCategory)
         if (exist) {
             return alert("This cart already added to cart")
         }
