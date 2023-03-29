@@ -1,0 +1,21 @@
+.header-container{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+.search-bar input{
+    border-color: #A9CB85;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 13px;
+    font-size: 18px;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.section-link a{
+    color: black;
+    margin-left: 20px;
+}
