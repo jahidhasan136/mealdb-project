@@ -8,18 +8,21 @@ const Shop = () => {
     const [shop, setShop] = useState([])
     const [order, setOrder] = useState([])
 
-    useEffect( () =>{
+    useEffect(() => {
         fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
-        .then(res => res.json())
-        .then(data => setShop(data.categories))
-    },[]);
+            .then(res => res.json())
+            .then(data => setShop(data.categories))
+    }, []);
 
 
-    function handleCart(shop){
+    function handleCart(shop) {
+        const exist = order.find(item => item.id == shop.id)
+        if (exist) {
+            return alert("This cart already added to cart")
+        }
         const newOrder = [...order, shop]
         setOrder(newOrder)
     }
-
 
     return (
         <div className='shop-container'>
@@ -28,7 +31,7 @@ const Shop = () => {
                     shop.map(cart => <Cart cart={cart} key={cart.idCategory} handleCart={handleCart}></Cart>)}
             </div>
             <div className='order-container'>
-            <h3>Order Summary</h3>
+                <h3>Order Summary</h3>
                 {
                     order.map(ordered => <Order key={ordered.idCategory
                     } ordered={ordered}></Order>)
