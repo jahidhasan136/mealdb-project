@@ -6,6 +6,7 @@ import './Shop.css';
 const Shop = () => {
 
     const [shop, setShop] = useState([])
+    const [order, setOrder] = useState([])
 
     useEffect( () =>{
         fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
@@ -13,10 +14,10 @@ const Shop = () => {
         .then(data => setShop(data.categories))
     },[]);
 
-    const [order, setOrder] = useState([])
 
     function handleCart(shop){
-        setOrder(shop)
+        const newOrder = [...order, shop]
+        setOrder(newOrder)
     }
 
 
@@ -26,8 +27,12 @@ const Shop = () => {
                 {
                     shop.map(cart => <Cart cart={cart} key={cart.idCategory} handleCart={handleCart}></Cart>)}
             </div>
-            <div>
-                <Order order={order}></Order>
+            <div className='order-container'>
+            <h3>Order Summary</h3>
+                {
+                    order.map(ordered => <Order key={ordered.idCategory
+                    } ordered={ordered}></Order>)
+                }
             </div>
         </div>
     );

@@ -1,11 +1,8 @@
 import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react';
 
 const Cart = (props) => {
-
-    // console.log(props)
     const handleCart = props.handleCart
     
 

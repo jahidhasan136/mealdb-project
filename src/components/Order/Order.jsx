@@ -2,10 +2,10 @@ import React from 'react';
 import './Order.css';
 
 const Order = (props) => {
-    const {strCategory, strCategoryThumb} = props.order
+    const {strCategory, strCategoryThumb} = props.ordered
     return (
-        <div className='order-container'>
-            <h3>Order Summary</h3>
+        <div>
+            
             <div className='order-info'>
                 <img src={strCategoryThumb} alt="" />
                 <h5>{strCategory}</h5>
