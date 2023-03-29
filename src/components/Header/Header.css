@@ -3,6 +3,9 @@
     place-items: center;
     justify-content: space-between;
     padding: 0 70px;
+    padding-bottom: 5px;
+    margin-bottom: 70px;
+    border-bottom: 3px solid #A9CB85;
 }
 .search-bar input{
     border-color: #A9CB85;
@@ -10,7 +13,7 @@
     height: 30px;
     border-radius: 20px;
     padding: 0 13px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .search-bar input:focus{
     outline: none;
