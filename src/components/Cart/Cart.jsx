@@ -1,11 +1,14 @@
-import React from 'react';
 import './Cart.css';
 
-const Cart = () => {
+const Cart = (props) => {
+    console.log(props.cart)
+
+    const {idCategory, strCategory, strCategoryThumb, strCategoryDescription} = props.cart;
     return (
         <div>
-            <img src="" alt="" />
-            <h3>Food Name: </h3>
+            <img src={strCategoryThumb} alt="" />
+            <h4>Food Name: {strCategory}</h4>
+            
         </div>
     );
 };
