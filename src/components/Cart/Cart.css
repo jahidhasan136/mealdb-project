@@ -3,9 +3,21 @@
     margin: 20px;
     padding: 10px;
     border-radius: 5px;
+    width: 350px;
 }
 
-.cart-container img{
+.cart-container p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.cart-img{
+    text-align: center;
+}
+.cart-img img{
     box-shadow: 0px 0px 1px 0px #000000;
     border-radius: 5px;
 }
@@ -16,11 +28,13 @@
 .btn button{
     background-color: #A9CB85;
     padding: 10px 20px;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 10px;
 }
 .btn button:hover{
-    opacity: 0.9;
+    background-color: white;
+    border: 1px solid #A9CB85;
 }

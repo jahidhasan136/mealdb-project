@@ -1,16 +1,20 @@
 import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Cart = (props) => {
     console.log(props.cart)
 
-    const {idCategory, strCategory, strCategoryThumb, strCategoryDescription} = props.cart;
+    const {strCategory, strCategoryThumb, strCategoryDescription} = props.cart;
     return (
         <div className='cart-container'>
-            <img src={strCategoryThumb} alt="" />
+            <div className='cart-img'>
+                <img src={strCategoryThumb} alt="" />
+            </div>
             <h4>Food Name: {strCategory}</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, at.</p>
+            <p>{strCategoryDescription}.</p>
             <div className='btn'>
-            <button>Add to Cart</button>
+            <button>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></button>
             </div>
         </div>
     );

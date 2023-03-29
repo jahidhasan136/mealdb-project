@@ -1,0 +1,11 @@
+.order-container{
+    text-align: center;
+    background-color: #A9CB85;
+    height: 400px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.order-container h2{
+    padding-top: 10px;
+}

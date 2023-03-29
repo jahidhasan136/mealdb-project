@@ -19,6 +19,14 @@
     outline: none;
 }
 .section-link a{
+    background-color: #A9CB85;
+    padding: 10px 20px;
+    border-radius: 25px;
     color: black;
     margin-left: 20px;
+    border: 1px solid transparent;
+}
+.section-link a:hover{
+    background-color: white;
+    border: 1px solid #A9CB85;
 }
