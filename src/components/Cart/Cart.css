@@ -1,11 +1,26 @@
 .cart-container{
-    border: 1px solid gray;
+    box-shadow: 0px 0px 3px 0px #A9CB85;
     margin: 20px;
     padding: 10px;
     border-radius: 5px;
 }
 
 .cart-container img{
-    box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 1px 0px #000000;
     border-radius: 5px;
+}
+
+.btn{
+    text-align: right;
+}
+.btn button{
+    background-color: #A9CB85;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn button:hover{
+    opacity: 0.9;
 }

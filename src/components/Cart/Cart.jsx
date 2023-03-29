@@ -8,7 +8,10 @@ const Cart = (props) => {
         <div className='cart-container'>
             <img src={strCategoryThumb} alt="" />
             <h4>Food Name: {strCategory}</h4>
-            <p>{strCategoryDescription}</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, at.</p>
+            <div className='btn'>
+            <button>Add to Cart</button>
+            </div>
         </div>
     );
 };

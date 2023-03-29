@@ -6,7 +6,7 @@ const Header = () => {
         <div className='header-container'>
             <img src="../../../public/New Project.png" alt="" />
             <div className='search-bar'>
-                <input type="text" name="" id="" placeholder='Search Food Name' />
+                <input type="text" name="" id="" placeholder='search food name' />
             </div>
             <div className='section-link'>
                 <a href="">Home</a>
