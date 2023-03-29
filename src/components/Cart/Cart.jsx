@@ -1,10 +1,15 @@
 import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
 
 const Cart = (props) => {
 
-    const {strCategory, strCategoryThumb, strCategoryDescription} = props.cart;
+    // console.log(props)
+    const handleCart = props.handleCart
+    
+
+    const { strCategory, strCategoryThumb, strCategoryDescription } = props.cart;
     return (
         <div className='cart-container'>
             <div className='cart-img'>
@@ -13,7 +18,7 @@ const Cart = (props) => {
             <h4>Food Name: {strCategory}</h4>
             <p>{strCategoryDescription}.</p>
             <div className='btn'>
-            <button>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></button>
+                <button onClick={()=>handleCart(props.cart)}>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></button>
             </div>
         </div>
     );

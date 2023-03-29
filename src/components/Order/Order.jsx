@@ -1,13 +1,14 @@
 import React from 'react';
 import './Order.css';
 
-const Order = () => {
+const Order = (props) => {
+    const {strCategory, strCategoryThumb} = props.order
     return (
         <div className='order-container'>
-            <h2>Order Summary</h2>
+            <h3>Order Summary</h3>
             <div className='order-info'>
-                <img src="../../../public/New Project.png" alt="" />
-                <h4>Jahid Hasan (Mim)</h4>
+                <img src={strCategoryThumb} alt="" />
+                <h5>{strCategory}</h5>
             </div>
         </div>
     );
