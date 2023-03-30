@@ -24,14 +24,23 @@
     text-decoration: underline;
 }
 
-.order-info{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
 .order-container img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 768px) {
+    .shop-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .food-info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .order-container{
+        width:400px;
+    }
+  }

@@ -30,3 +30,19 @@
     background-color: white;
     border: 1px solid #A9CB85;
 }
+
+@media only screen and (max-width: 768px){
+    .header-container{
+        display: grid;
+        justify-content: center;
+    }
+    .search-bar input{
+        text-align: center;
+        margin: 15px 0;
+    }
+    .section-link a{
+        display: grid;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
