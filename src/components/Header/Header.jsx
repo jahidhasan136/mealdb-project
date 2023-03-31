@@ -1,10 +1,11 @@
 import React from 'react';
 import './Header.css';
+import logo from '../../assets/new-project.png';
 
 const Header = () => {
     return (
         <div className='header-container'>
-            <img src="../../../public/new-project.png" alt="" />
+            <img src={logo} alt="" />
             <div className='search-bar'>
                 <input type="text" name="" id="" placeholder='search food name' />
             </div>
