@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div className='header-container'>
-            <img src="../../../public/New Project.png" alt="" />
+            <img src="../../../public/new-project.png" alt="" />
             <div className='search-bar'>
                 <input type="text" name="" id="" placeholder='search food name' />
             </div>
